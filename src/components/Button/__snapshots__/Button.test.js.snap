@@ -13,30 +13,9 @@ exports[`Button renders without props 1`] = `
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
-  color: #333;
-  background: transparent;
-  border-color: #333;
-}
-
-.c0 .sc-ifAKCX {
-  top: 6px;
-}
-
-.c0:hover,
-.c0:active {
-  color: #4c4c4c;
-  background: transparent;
-  border-color: #4c4c4c;
-}
-
-.c0:active,
-.c0:focus {
-  -webkit-animation: 0.5s ease 0s forwards cidwDA;
-  animation: 0.5s ease 0s forwards cidwDA;
 }
 
 <button
   className="c0"
-  disabled={false}
 />
 `;
