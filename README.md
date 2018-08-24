@@ -1,19 +1,20 @@
-# Refresh Template - React Component Library
-
+[![exhibit banner](https://raw.githubusercontent.com/au-re/react-exhibit/gh-pages/static/media/exhibit.png)](https://github.com/au-re/react-exhibit-template)
+[![License](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/au-re/react-exhibit-template/blob/master/LICENSE)
+[![dependencies Status](https://david-dm.org/au-re/generator-react-exhibit/status.svg?style=flat-square)](https://david-dm.org/au-re/react-exhibit-template)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> A component library template built from the [create-react-app](https://github.com/facebook/create-react-app) boilerplate.
+> A component library template based on [create-react-app](https://github.com/facebook/create-react-app). Including documentation. This template is used by [generator-react-exhibit](generator-react-exhibit). 
 
-View it live [here](https://au-re.github.io/refresh-template-library/).
+View it live [here](https://au-re.github.io/react-exhibit-template/).
 
 ## Tech Stack
 
 | frontend          |             |
 | ------------------|-------------|
 | view library      | [react](https://reactjs.org/) |
-| styling           | [styled-components ](https://github.com/styled-components/styled-components) |
 | boilerplate       | [create-react-app](https://github.com/facebook/create-react-app)|
 | documentation     | [storybook](https://github.com/storybooks/storybook) |
+| styling           | (optional) [styled-components ](https://github.com/styled-components/styled-components) |
 
 ## Requirements
 
@@ -26,19 +27,19 @@ updating [npm](https://www.npmjs.com/) to version >=5.
 
 ## Getting started
 
-You can setup a new project based on this boilerplate using [Yeoman](http://yeoman.io).
+You can setup a new project based on this template using [Yeoman](http://yeoman.io).
 
-First, install Yeoman and generator-refresh using [npm](https://www.npmjs.com/).
+First, install Yeoman and generator-react-exhibit using [npm](https://www.npmjs.com/).
 
 ```bash
 npm install -g yo
-npm install -g generator-refresh
+npm install -g generator-react-exhibit
 ```
 
 Then generate your new project:
 
 ```bash
-yo refresh <my-project>
+yo react-exhibit <my-project>
 ```
 
 Navigate to the root of the project and install the dependencies:
@@ -61,7 +62,7 @@ an example.
 
 ## Scripts
 
-A set of scripts are provided for you to test, build and analyze the project.
+A set of scripts are provided for you to test, build and analyze the project. HAve a look at [create react app](https://github.com/facebook/create-react-app) for more information.
 
 ### Test
 
@@ -94,7 +95,7 @@ npm run build
 
 This will create a build folder containing your library.
 
-You can also build a production ready version of you documentation by running:
+You can also build a production ready version of your documentation by running:
 
 ```sh
 npm run build:storybook
