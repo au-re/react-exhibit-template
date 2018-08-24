@@ -1,9 +1,10 @@
 [![exhibit banner](https://raw.githubusercontent.com/au-re/react-exhibit/gh-pages/static/media/exhibit.png)](https://github.com/au-re/react-exhibit-template)
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/au-re/react-exhibit-template/blob/master/LICENSE)
-[![dependencies Status](https://david-dm.org/au-re/generator-react-exhibit/status.svg?style=flat-square)](https://david-dm.org/au-re/react-exhibit-template)
+[![dependencies Status](https://david-dm.org/au-re/react-exhibit-template/status.svg?style=flat-square)](https://david-dm.org/au-re/react-exhibit-template)
+[![devDependencies Status](https://david-dm.org/au-re/react-exhibit-template/dev-status.svg?style=flat-square)](https://david-dm.org/au-re/react-exhibit-template?type=dev)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> A component library template based on [create-react-app](https://github.com/facebook/create-react-app). Including documentation. This template is used by [generator-react-exhibit](generator-react-exhibit). 
+> A component library template based on [create-react-app](https://github.com/facebook/create-react-app). Including documentation. This template is used by [generator-react-exhibit](generator-react-exhibit).
 
 View it live [here](https://au-re.github.io/react-exhibit-template/).
 
