@@ -2,9 +2,9 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> Add styled-components, routing, storybook and a sensible project structure to the [create-react-app](https://github.com/facebook/create-react-app) boilerplate.
+> A component library template built from the [create-react-app](https://github.com/facebook/create-react-app) boilerplate.
 
-View it live [here]().
+View it live [here](https://au-re.github.io/refresh-template-library/).
 
 ## Tech Stack
 
@@ -48,29 +48,20 @@ cd <my-project>
 npm i
 ```
 
-Once the dependencies are installed, you can launch the development environment and have a look at the boilerplate application:
+Once the dependencies are installed, you can launch the documentation and view your components in
+isolation:
 
 ```sh
 npm run start
 ```
 
-This will launch the webpack dev server for you and automatically sync your browser. You can now
-view the website on [localhost:3000](http://localhost:3000).
+To include a component in the storybook, simply add a `<componentName>.stories.js` file in your
+component folder, containing the stories you want to show. Have a look at the `Button` component for
+an example.
 
 ## Scripts
 
 A set of scripts are provided for you to test, build and analyze the project.
-
-### Storybook
-
-With storybook you can view the components you have created in isolation. To view them, simply run:
-
-```sh
-npm run storybook
-```
-
-To include a component to the storybook, simply add a `<componentName>.stories.js` file in your
-component folder, containing the stories you want to show.
 
 ### Test
 
@@ -95,13 +86,37 @@ npm i -g serve && serve coverage
 
 ### Build
 
-You can build a production ready version of the website by running:
+You can build a production ready version of your library by running:
 
 ```sh
 npm run build
 ```
 
-This will create a build folder with the minimized and transpiled JS.
+This will create a build folder containing your library.
+
+You can also build a production ready version of you documentation by running:
+
+```sh
+npm run build:storybook
+```
+
+This will create a folder called `storybook-static` with your documentation.
+
+### Deploy
+
+After building your documentation, you can deploy it as a gh-page.
+Make sure to add a homepage value in your `package.json` like so:
+
+```json
+{
+  "homepage": "https://my-github-name.github.io/my-library/",
+}
+```
+
+Then simply run:
+```sh
+npm run deploy
+```
 
 ### Dependency map
 
