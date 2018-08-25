@@ -4,8 +4,8 @@ import { setOptions } from "@storybook/addon-options";
 import { configure } from "@storybook/react";
 
 setOptions({
-  name: "refresh-template-library",
-  url: "https://github.com/au-re/refresh-template-library",
+  name: "react-exhibit-template",
+  url: "https://github.com/au-re/react-exhibit-template",
   goFullScreen: false,
   showDownPanel: false,
   downPanelInRight: false,
