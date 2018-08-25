@@ -63,7 +63,7 @@ an example.
 
 ## Scripts
 
-A set of scripts are provided for you to test, build and analyze the project. HAve a look at [create react app](https://github.com/facebook/create-react-app) for more information.
+A set of scripts are provided for you to test, build and analyze the project. Have a look at [create react app](https://github.com/facebook/create-react-app) for more information.
 
 ### Test
 
