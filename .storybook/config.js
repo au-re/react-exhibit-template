@@ -1,5 +1,3 @@
-import "../src/styles/global";
-
 import { setOptions } from "@storybook/addon-options";
 import { configure } from "@storybook/react";
 

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+/** A simple Button using styled components */
+
 const Button = styled.button`
   text-align: center;
   line-height: 2.5rem;

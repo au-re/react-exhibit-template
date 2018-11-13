@@ -27,6 +27,7 @@
     "class-methods-use-this": "off",
     "no-plusplus": "off",
     "consistent-return": "off",
+    "implicit-arrow-linebreak": "off",
     "import/first": "off",
     "function-paren-newline": "off",
     "padded-blocks": "off",
