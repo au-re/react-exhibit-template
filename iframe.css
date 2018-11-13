@@ -1,0 +1,56 @@
+.Exhibit__Logo__Box {
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+}
+
+.Exhibit__Logo__Box.Box--Outer {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  position: relative;
+  border-bottom: 120px solid #29ACE2;
+  border-left: 120px solid #7454A2;
+}
+
+.Exhibit__Logo__Box.Box--Inner {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 20px;
+  border-bottom: 80px solid #F8932B;
+  border-left: 80px solid #F9AE15;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+
+.Exhibit__Logo__Box.Box--Inner:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.Exhibit__Logo__Box.Box--Inner:hover+.Exhibit__Logo__Circle.Circle--Top {
+  -webkit-transform: translate(0px, 20px);
+          transform: translate(0px, 20px);
+}
+
+.Exhibit__Logo__Circle {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  position: absolute;
+  z-index: 4000;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.Exhibit__Logo__Circle.Circle--Top {
+  margin-top: 92px;
+  margin-left: -68px;
+  background-color: #EB529A;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+
+/*# sourceMappingURL=iframe.css.map*/
