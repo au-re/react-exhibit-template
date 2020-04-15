@@ -1,0 +1,14 @@
+import {{name}} from "./{{name}}";
+
+<Meta title="Components|{{name}}" />
+
+{{name}}
+===
+
+A simple {{name}} to showcase the library.
+
+```jsx
+  <{{name}} />
+```
+
+<{{name}} />

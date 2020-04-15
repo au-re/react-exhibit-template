@@ -16,6 +16,7 @@
     "deploy": "gh-pages -d storybook-static",
     "predeploy": "npm run build:storybook",
     "eject": "react-scripts eject",
+    "plop": "plop --plopfile ./.plop/plopfile.js",
     "commit": "git-cz"
   },
   "peerDependencies": {
@@ -38,6 +39,7 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
+    "@testing-library/react": "^10.0.2",
     "commitizen": "^4.0.4",
     "cz-emoji": "^1.2.1",
     "eslint-config-airbnb-base": "^14.1.0",
@@ -52,7 +54,8 @@
     "react-test-renderer": "^16.13.1",
     "source-map-explorer": "^2.4.2",
     "styled-components": "^5.1.0",
-    "webpack": "^4.42.1"
+    "webpack": "^4.42.1",
+    "plop": "^2.6.0"
   },
   "browserslist": [
     ">0.2%",

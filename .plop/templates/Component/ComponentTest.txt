@@ -3,12 +3,12 @@ import "jest-styled-components";
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Button from "./Button";
+import {{name}} from "./{{name}}";
 
-describe("<Button />", () => {
+describe("<{{name}} />", () => {
 
   it("renders without props", () => {
-    const tree = renderer.create(<Button />).toJSON();
+    const tree = renderer.create(<{{name}} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

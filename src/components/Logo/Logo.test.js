@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 import Logo from "./Logo";
 
-describe("Logo", () => {
+describe("<Logo />", () => {
 
   it("renders without props", () => {
     const tree = renderer.create(<Logo />).toJSON();
