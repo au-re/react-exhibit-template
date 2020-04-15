@@ -18,7 +18,6 @@
   margin-top: 20px;
   border-bottom: 80px solid #F8932B;
   border-left: 80px solid #F9AE15;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
   transition: -webkit-transform .25s ease-in-out;
   transition: transform .25s ease-in-out;
   transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
@@ -47,10 +46,9 @@
   margin-top: 92px;
   margin-left: -68px;
   background-color: #EB529A;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
   transition: -webkit-transform .25s ease-in-out;
   transition: transform .25s ease-in-out;
   transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
 }
 
-/*# sourceMappingURL=iframe.css.map*/
+/*# sourceMappingURL=main.1aa19b0b.chunk.css.map*/
