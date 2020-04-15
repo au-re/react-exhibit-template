@@ -1,7 +1,8 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const webpack = require("webpack");
-const dependencies = Object.keys(require("./package.json").dependencies);
+const dependencies = Object.keys(require("./package.json").dependencies || {});
+const peerDependencies = Object.keys(require("./package.json").peerDependencies || {});
 
 const libraryName = path.basename(process.env.npm_package_name);
 const entryFile = "src/index.js";
@@ -17,7 +18,7 @@ module.exports = function override(config, env) {
   config.output.path = path.resolve(outputDir);
 
   config.optimization = {};
-  config.externals = dependencies;
+  config.externals = [...dependencies, ...peerDependencies];
 
   config.plugins = [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
