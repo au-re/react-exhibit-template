@@ -1,7 +1,7 @@
 {
   "name": "react-exhibit-template",
   "main": "build/static/js/main.js",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "A component library template",
   "homepage": "https://au-re.github.io/react-exhibit-template/",
@@ -15,6 +15,7 @@
     "coverage": "npm run test -- --coverage",
     "deploy": "gh-pages -d storybook-static",
     "predeploy": "npm run build:storybook",
+    "prepare": "npm run build",
     "eject": "react-scripts eject",
     "plop": "plop --plopfile ./.plop/plopfile.js",
     "commit": "git-cz"

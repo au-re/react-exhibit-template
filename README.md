@@ -133,4 +133,4 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 
 ## License
 
-[MIT](https://github.com/au-re/fresh-start/blob/master/LICENSE)
+[MIT](https://github.com/au-re/react-exhibit-template/blob/master/LICENSE)
