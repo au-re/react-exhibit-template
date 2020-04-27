@@ -3,10 +3,10 @@
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "types": "lib/index.d.ts",
-  "version": "0.2.6",
-  "license": "MIT",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
   "description": "A component library template using typescript",
-  "homepage": "https://au-re.github.io/react-exhibit-template/",
+  "homepage": "<%= homepageUrl %>",
   "scripts": {
     "analyze": "source-map-explorer lib/index.min.*",
     "start": "start-storybook -p 9009 -s public",
