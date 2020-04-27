@@ -1,43 +1,43 @@
 {
   "env": {
-    "es6": true,
-    "commonjs": true,
     "browser": true,
-    "jest": true,
-    "node": true,
-    "mocha": true
+    "es6": true,
+    "jest": true
   },
   "extends": [
-    "airbnb-base",
-    "react-app"
+    "plugin:react/recommended",
+    "airbnb"
   ],
-  "rules": {
-    "template-tag-spacing": "off",
-    "no-param-reassign": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/*test.js",
-          "**/*stories.js",
-          "config-overrides.js"
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
         ]
       }
-    ],
-    "class-methods-use-this": "off",
-    "no-plusplus": "off",
-    "consistent-return": "off",
-    "implicit-arrow-linebreak": "off",
-    "import/first": "off",
-    "function-paren-newline": "off",
-    "padded-blocks": "off",
-    "no-shadow": "off",
-    "object-curly-newline": "off",
-    "arrow-parens": [
-      "warn",
-      "always"
-    ],
-    "quotes": [
+    }
+  },
+  "rules": {
+    "@typescript-eslint/quotes": [
       "warn",
       "double",
       {

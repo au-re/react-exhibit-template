@@ -128,7 +128,7 @@ browser.
 Typescript support was added to `react-scripts@2.1.0`. To activate it, run:
 
 ```
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+npm install -D typescript @types/node @types/react @types/react-dom @types/jest
 ```
 
 ## License

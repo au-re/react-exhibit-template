@@ -1,21 +1,24 @@
 {
   "name": "react-exhibit-template",
-  "main": "build/static/js/main.js",
-  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "version": "0.2.6",
   "license": "MIT",
-  "description": "A component library template",
+  "description": "A component library template using typescript",
   "homepage": "https://au-re.github.io/react-exhibit-template/",
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "start": "start-storybook -p 9009 -s public",
     "build": "react-app-rewired build --library",
+    "build:rollup": "rm -rf lib && rollup -c",
     "build:storybook": "build-storybook -s public",
     "clean": "rm -rf node_modules && npm i",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --watch",
     "coverage": "npm run test -- --coverage",
     "deploy": "gh-pages -d storybook-static",
     "predeploy": "npm run build:storybook",
-    "prepare": "npm run build",
+    "prepare": "npm run build:rollup",
     "eject": "react-scripts eject",
     "plop": "plop --plopfile ./.plop/plopfile.js",
     "commit": "git-cz"
@@ -24,39 +27,65 @@
     "react": "^16.0.0",
     "styled-components": "^5.0.0"
   },
-  "config": {
-    "cz-emoji": {},
-    "commitizen": {
-      "path": "cz-emoji"
-    }
-  },
-  "importSort": {
-    ".js": {
-      "style": "module"
-    }
-  },
   "devDependencies": {
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@testing-library/react": "^10.0.2",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/styled-components": "^5.1.0",
     "commitizen": "^4.0.4",
     "cz-emoji": "^1.2.1",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "gh-pages": "^2.2.0",
+    "jest": "^25.3.0",
     "jest-styled-components": "^7.0.2",
     "mini-css-extract-plugin": "^0.9.0",
+    "plop": "^2.6.0",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.5",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.1",
     "react-test-renderer": "^16.13.1",
+    "rollup": "^2.6.1",
+    "rollup-plugin-css-only": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^2.6.4",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.27.0",
     "source-map-explorer": "^2.4.2",
     "styled-components": "^5.1.0",
+    "ts-jest": "^25.3.1",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
     "webpack": "^4.42.1",
-    "plop": "^2.6.0"
+    "webpack-node-externals": "^1.7.2"
+  },
+  "config": {
+    "cz-emoji": {},
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.stories.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|sass|scss)$": "<rootDir>/__mocks__/cssMock.js"
+    }
   },
   "browserslist": [
     ">0.2%",
