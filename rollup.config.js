@@ -2,16 +2,16 @@ import typescriptPlugin from "rollup-plugin-typescript2";
 import typescript from "typescript";
 import { terser } from "rollup-plugin-terser";
 import sourcemaps from "rollup-plugin-sourcemaps";
-import postcss from 'rollup-plugin-postcss'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import postcss from "rollup-plugin-postcss";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 import pkg from "./package.json";
 
 const snakeToCamel = (str) => str.replace(
   /([-_][a-z])/g,
   (group) => group.toUpperCase()
-    .replace('-', '')
-    .replace('_', '')
+    .replace("-", "")
+    .replace("_", ""),
 );
 
 export default {
@@ -34,7 +34,7 @@ export default {
       name: snakeToCamel(pkg.name),
       sourcemap: true,
       plugins: [terser()],
-    }
+    },
   ],
   external: [
     ...Object.keys(pkg.peerDependencies || {}),
@@ -44,7 +44,7 @@ export default {
       extract: "./lib/styles.min.css",
       minimize: true,
       sourceMap: true,
-      use: ['sass'],
+      use: ["sass"],
     }),
     peerDepsExternal(),
     sourcemaps(),

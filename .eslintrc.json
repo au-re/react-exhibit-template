@@ -43,6 +43,24 @@
       {
         "allowTemplateLiterals": true
       }
-    ]
+    ],
+    "quotes": [
+      "warn",
+      "double",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*test.js",
+          "**/*stories.js",
+          "config-overrides.js",
+          "__tests__/**"
+        ]
+      }
+    ],
   }
 }
