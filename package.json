@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@storybook/addon-docs": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
+    "@storybook/addons": "^6.3.4",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@testing-library/react": "^10.0.2",
